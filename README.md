@@ -38,7 +38,7 @@ a given input to the color from the reduced color palette it should be replaced 
 ## High-level description:
 
 Your program will read in a bitmap image (.bmp file) and perform color quantization on the image using two different
-algorithms, `BASIC_BUCKETING` and `CLUSTERING`, while considering two different metrics, `SQUARED_EUCLIDEAN`,
+algorithms, `BASIC_BUCKETING` and `CLUSTERING`, while considering a different metric, `SQUARED_EUCLIDEAN`,
 which are described below in the Specifications.
 
 ## Specifications:
@@ -53,7 +53,7 @@ which are described below in the Specifications.
    bucket contains [0, 65535], bucket two contains [65536, 131071], etc. and the center of each bucket should be used as
    the final color of that bucket (e.g., 32768, and 98304 for the buckets above).
 
-1. You will need to implement two stateless classes (no attributes, only methods) which implement the interface `DistanceMetric_Inter`:
+1. You will need to implement a stateless class (no attributes, only methods) which implement the interface `DistanceMetric_Inter`:
     * `SquaredEuclideanMetric` in `./app/src/main/java/cs1501_p5/SquaredEuclideanMetric.java`. This class will implement
       the `colorDistance` method as shown in `DistanceMetric_Inter.java` by returning the distance between the RGB
       values of two pixels using the squared
