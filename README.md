@@ -63,15 +63,6 @@ which are described below in the Specifications.
         * A full description of Squared Euclidean Distance can be found
           at [squared_euclidean](https://en.wikipedia.org/wiki/Euclidean_distance#Squared_Euclidean_distance).
 
-    * `CosineDistanceMetric` in `./app/src/main/java/cs1501_p5/CosineDistanceMetric.java`. This class will implement
-      the `colorDistance` method as shown in `DistanceMetric_Inter.java` by returning the distance between the RGB
-      values of two pixels using the cosine
-      distance formula:
-
-      `c(p1, p2) = 1 - ((R1*R2)+(G1*G2)+(B1*B2)) / (sqrt(R1^2 + G1^2 + B1^2) * sqrt(R2^2 + G2^2 + B2^2))`
-        * A full description of Cosine Distance can be found
-          at [cosine_distance](https://en.wikipedia.org/wiki/Cosine_similarity#Cosine_Distance).
-
 1. You will need to implement a class named `ClusteringMapGenerator`
    in `./app/src/main/java/cs1501_p5/ClusteringMapGenerator.java` which implements the
    interface `ColorMapGenerator_Inter`. This class should have a constructor that accepts a class that implements
@@ -119,7 +110,6 @@ which are described below in the Specifications.
 | Feature                                                                                | Points 
 |----------------------------------------------------------------------------------------|--------
 | Squared Euclidean `colorDistance` works correctly                                      | 5
-| Cosine Distance `colorDistance` works correctly                                        | 5
 | `BucketingMapGenerator`'s `generateColorPalette` works correctly                       | 2
 | `BucketingMapGenerator`'s `generateColorMap` works correctly                           | 5
 | `ClusteringMapGenerator`'s `generateColorPalette` works correctly with Euclidean       | 10
