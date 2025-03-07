@@ -38,7 +38,7 @@ a given input to the color from the reduced color palette it should be replaced 
 ## High-level description:
 
 Your program will read in a bitmap image (.bmp file) and perform color quantization on the image using two different
-algorithms, `BASIC_BUCKETING` and `CLUSTERING`, while considering two different metrics, `SQUARED_EUCLIDEAN` and `COSINE_DISTANCE`,
+algorithms, `BASIC_BUCKETING` and `CLUSTERING`, while considering two different metrics, `SQUARED_EUCLIDEAN`,
 which are described below in the Specifications.
 
 ## Specifications:
